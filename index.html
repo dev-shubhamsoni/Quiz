@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- navigation -->
+
+    <div class="navigation" id="navigation"></div>
+
+    <!-- main container -->
+
+    <div class="main-container" id="main-container">
+      <!-- first screen -->
+
+      <div class="start-page hidden" id="start-page">
+        <h1>Welcome to the Quiz</h1>
+        <button class="button-start-quiz" id="button-start-quiz">
+          Start Quiz
+        </button>
+      </div>
+
+      <!-- Second screen -->
+
+      <div class="questions-page" id="questions-page" hidden>
+        <h1 class="question" id="question"></h1>
+        <div class="answer-block" id="answer-block">
+          <span class="answer onClick" id="wrong-answer-1"></span>
+          <span class="answer onClick" id="wrong-answer-2"></span>
+          <span class="answer onClick" id="wrong-answer-3"></span>
+          <span class="answer onClick true-answer" id="right-answer"></span>
+        </div>
+        <div class="nextButton" id="next-button-container">
+          <button class="next" id="next">Next</button>
+        </div>
+      </div>
+
+      <!-- Result Screen -->
+
+      <div class="result-screen" id="result-screen" hidden>
+        <div class="result-content" id="result-content">
+          <h2 id="total-correct-answer"></h2>
+          <h2 id="total-wrong-answer"></h2>
+        </div>
+      </div>
+    </div>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+  </body>
+</html>
